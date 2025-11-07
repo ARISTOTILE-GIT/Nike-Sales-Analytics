@@ -114,9 +114,10 @@ def plot_monthly_revenue_trend(df):
     data = df.groupby("Year_Month")["Revenue"].sum().reset_index()
     data["Year_Month_str"] = data["Year_Month"].astype(str) # Plotly needs string for categorical x-axis
     fig = px.line(data, x="Year_Month_str", y="Revenue", title="Monthly Revenue Trend", markers=True)
-    fig.update_xaxes(type='category')
+    # Added tickangle=90 to rotate the x-axis labels
+    fig.update_xaxes(type='category', tickangle=90)
     st.plotly_chart(fig, use_container_width=True)
-
+    
 def plot_monthly_revenue_heatmap(df):
     month_order = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     pivot_table = df.pivot_table(index="Product_Line", columns="Month", values="Revenue", aggfunc="sum").fillna(0)
