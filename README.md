@@ -1,7 +1,5 @@
 # Nike Sales Analytics Dashboard
 
-<div align="center">
-
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-brightgreen?style=for-the-badge&logo=streamlit)](https://nike-sales-analytics-totz.streamlit.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <br>
