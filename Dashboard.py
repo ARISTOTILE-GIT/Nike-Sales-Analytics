@@ -122,7 +122,9 @@ plot_list = [
 ]
 
 st.sidebar.header("Select Visualization")
-selected_plot = st.sidebar.selectbox("Choose a chart:", plot_list)
+# --- Use st.sidebar.radio to create a list of options ---
+selected_plot = st.sidebar.radio("Choose a chart:", plot_list)
+# --- End of change ---
 
 st.header(selected_plot)
 
