@@ -13,6 +13,21 @@ import statsmodels.api as sm  # Ensure statsmodels is imported
 # Set page to wide layout for better dashboard feel
 st.set_page_config(layout="wide")
 
+# --- CUSTOM CSS TO WIDEN SIDEBAR ---
+# You can change 350px to any width you want
+st.markdown(
+    """
+    <style>
+    [data-testid="stSidebar"] {
+        width: 350px !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+# --- END CUSTOM CSS ---
+
+
 # --- DATA LOADING AND CLEANING (from notebook) ---
 @st.cache_data
 def load_data(uploaded_file):
@@ -32,7 +47,9 @@ def load_data(uploaded_file):
     
     if 'Size' in df.columns:
         mode_value = df['Size'].mode()[0]
-        df[col] = df[col].fillna(mode_value)
+        # --- THIS IS THE CORRECTED LINE ---
+        df['Size'] = df['Size'].fillna(mode_value) 
+        # --- END CORRECTION ---
     
     # Fix 'Order_Date' column
     df["Order_Date_clean"] = df["Order_Date"].astype(str).str.replace(r"[./]", "-", regex=True)
