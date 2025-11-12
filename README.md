@@ -1,6 +1,6 @@
 # Nike Sales Analytics Dashboard
 
-[![Live Dashboard](https://img.shields.io/badge/Live%20Demo-brightgreen?style=for-the-badge&logo=streamlit)]((https://nike-sales-analytics-totz7.streamlit.app/))
+[![Live Dashboard](https://img.shields.io/badge/Live%20Demo-brightgreen?style=for-the-badge&logo=streamlit)](https://nike-sales-analytics-totz7.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
@@ -17,7 +17,7 @@ The dashboard provides high-level KPIs, 14 distinct visualizations, actionable i
 ## 🚀 Live Demo
 
 You can access the live, interactive dashboard here:
-**[https://nike-sales-analytics-totz.streamlit.app/](https://nike-sales-analytics-totz.streamlit.app/)**
+**[https://nike-sales-analytics-totz.streamlit.app/](https://nike-sales-analytics-totz7.streamlit.app/)**
 
 ## Features
 
